@@ -1,5 +1,5 @@
 {% set name = "xdatasets" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xdatasets-{{ version }}.tar.gz
-  sha256: fac77f394c79b37ad822edcec6b3706efd13142eabf385ad3d1ac6caba51ddec
+  sha256: abadd006c0cb15aea3a57df0bc66aaa7a694e662a0f20508fe3a0f17c07cb5d7
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -26,18 +26,17 @@ requirements:
     - cftime >=1.4.1
     - clisops >=0.9.2
     - dask-core >=2.6
-    - dask-geopandas
-    - geopandas
+    - dask-geopandas >=0.4.1
+    - geopandas >=1.0
     - intake <2.0.0
-    - intake-xarray >=0.6.1
+    - intake-xarray >=0.6.1,<2.0.0
     - intake-geopandas
-    - ipython
+    - ipython >=8.5.0
     - jsonpickle
-    - numpy >=1.16
-    - pandas >=0.23
-    - pint >=0.10
+    - numpy >=1.23
+    - pandas >=1.5
     - s3fs
-    - scipy >=1.2
+    - scipy >=1.9.0
     - tqdm
     - xarray >=2023.1
     - zarr >=2.11.1

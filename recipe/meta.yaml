@@ -28,17 +28,19 @@ requirements:
     - dask-core >=2.6
     - dask-geopandas >=0.4.1
     - geopandas >=1.0
-    - intake <2.0.0
-    - intake-xarray >=0.6.1,<2.0.0
+    - intake
     - intake-geopandas
+    - intake-xarray >=0.6.1,<2.0.0
     - ipython >=8.5.0
     - jsonpickle
     - numpy >=1.23
     - pandas >=1.5
     - s3fs
+    - setuptools
     - scipy >=1.9.0
     - tqdm
     - xarray >=2023.1
+    - wheel
     - zarr >=2.11.1
 
 test:

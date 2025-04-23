@@ -1,5 +1,5 @@
 {% set name = "xdatasets" %}
-{% set version = "0.3.7" %}
+{% set version = "0.3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xdatasets-{{ version }}.tar.gz
-  sha256: abadd006c0cb15aea3a57df0bc66aaa7a694e662a0f20508fe3a0f17c07cb5d7
+  sha256: 2efed0cfc39046827014b5ce89bbccd0edd2c86dcfa171d77a01b08b7e53b45f
 
 build:
   noarch: python

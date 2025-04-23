@@ -151,6 +151,3 @@ Feedstock Maintainers
 * [@Zeitsperre](https://github.com/Zeitsperre/)
 * [@sebastienlanglois](https://github.com/sebastienlanglois/)
 
-
-<!-- dummy commit to enable rerendering -->
-
